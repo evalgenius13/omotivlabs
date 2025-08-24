@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Omotiv Labs™ – Coming Soon</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen">
+
+  <div class="text-center px-6">
+    <!-- Logo / Name -->
+    <h1 class="text-5xl font-extrabold tracking-tight mb-4">Omotiv Labs™</h1>
+    <p class="text-lg text-gray-300 mb-8">
+      Building tomorrow’s tools at the intersection of AI, music, and robotics.
+    </p>
+
+    <!-- Coming Soon -->
+    <div class="bg-gray-800 rounded-2xl p-6 shadow-lg inline-block">
+      <p class="text-2xl font-semibold text-white mb-2">Coming Soon</p>
+      <p class="text-gray-400">Our ventures are in development. Stay tuned.</p>
+    </div>
+
+    <!-- Email capture -->
+    <form class="mt-8 max-w-md mx-auto flex">
+      <input type="email" placeholder="Enter your email"
+             class="flex-grow rounded-l-lg px-4 py-3 text-gray-900 focus:outline-none">
+      <button type="submit"
+              class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-r-lg font-semibold">
+        Notify Me
+      </button>
+    </form>
+
+    <!-- Footer -->
+    <p class="mt-8 text-gray-500 text-sm">
+      © <span id="year"></span> Omotiv Labs™. All rights reserved.
+    </p>
+  </div>
+
+  <script>
+    // Auto-update year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
